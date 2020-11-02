@@ -1,0 +1,46 @@
+.container{
+    padding: 65px;
+    margin: 46px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: silver;
+    display: table-caption;
+    padding-top: 44px;
+    padding-left: 44px;
+    position: fixed;
+    height: 246px;
+    width: 309px;
+    padding-bottom: 190px;
+    padding-right: 44px;
+    border-top-width: 4px;
+    left: 474px;
+}
+@media (max-width: 400px){
+    .container{
+        left: 10px;
+    padding-left: 33px;
+    margin-left: 16px;
+    margin-top: 1px;
+    top: 43px;
+    padding-bottom: 33px;
+    padding-top: 33px;
+    height: 199px;
+    width: 268px;
+    left: 15px;
+    padding-right: 23px;
+    margin-bottom: 12px;
+    bottom: 110px;
+    }
+
+}
+.btn-success{
+    margin-top: 4%;
+    display: inline;
+    margin-left: 64%;
+    background-color:#00405D;
+}
+.form-control {
+    padding: 65px;
+    margin: 60px;
+}
+

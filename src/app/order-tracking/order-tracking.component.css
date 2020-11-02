@@ -1,0 +1,136 @@
+.container{
+    margin-bottom: 156px;
+    margin-right: 278px;
+  
+}
+@media (max-width: 800px) {
+    .container { 
+    margin-top: 227px;
+    margin-bottom: 430px;
+
+    }
+}
+.container .child {
+    padding: 65px;
+    margin: 46px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: silver;
+    display: table-caption;
+    padding-top: 33px;
+    padding-left: 44px;
+    height: 173px;
+    width: 309px;
+    padding-bottom: 10px;
+    padding-right: 44px;
+    border-top-width: 4px;
+    margin-left: 520px;
+    position: fixed;
+    margin-top: 281px;
+    bottom: 291px;
+    left: 1px;
+    margin-bottom: 3px;
+}
+
+@media (max-width: 400px){
+    .container .child {
+        position: fixed;
+        margin-bottom:  8 px;
+        margin-left: 17px;
+        padding-right: 44px;
+        height: 142px;
+        padding-left: 44px;
+        margin-top: 2px;
+        width: 289px;
+        padding-bottom: 10px;
+        bottom: 346px;
+        top: 41px;
+        
+    }
+}
+
+.container .center{
+    padding-top: 205px;   
+    top: 277.266px;
+    bottom: 0px;
+    top: 146px;
+}
+
+@media (max-width: 400px){
+    .container .center {
+        
+        left: 0px;
+        padding-top: 0px;
+        margin-bottom:  9 px;
+        margin-left: 0px;
+        /* padding-right: 44px; */
+        height: 142px;
+        padding-left: 0px;
+        margin-top: 2px;
+        width: 346px;
+        padding-bottom: 7px;
+        bottom: 345px;
+        top: 43px;
+        
+    }
+}
+
+.btn-success{
+    margin-top: 4%;
+    margin-left: 57%;
+    margin-bottom: 3%;
+    cursor: grabbing;
+    display: inline;
+    background-color:#00405D;
+}
+.table{
+    width: 30%;
+    border-top-right-radius: unset;
+    margin-top: 30px;
+    margin-left: 473px;
+    display: inline;
+    
+}
+@media (max-width: 390px) {
+    .table {
+        width: 273px;
+        border-top-right-radius: unset;
+        margin-top: 32px;
+        margin-left: 0px;
+        display: inline;
+        height: 99px;
+        margin-bottom: 16px;
+        
+    }
+}
+
+@media (max-width: 390px) {
+    .table td,.table th {
+        padding: inherit;
+        font-family: unset;
+        font-variant: unset;
+        vertical-align: bottom;
+        padding-right: 4px;
+        padding-bottom: 11px;
+        padding-left: 3px;
+    }
+}
+
+.table td,.table th {
+    padding: inherit;
+    font-family: unset;
+    font-variant: unset;
+    vertical-align: bottom;
+    padding-right: 4px;
+    padding-bottom: 11px;
+    padding-left: 3px;
+}
+
+@media (max-width: 400px) {
+    .table tr {
+        border: hidden;
+    }
+}
+.table tr {
+    border: hidden;
+}

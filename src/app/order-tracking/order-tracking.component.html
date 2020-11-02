@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.01//EN”
+“http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <div class="container">
+   <div class="child" >
+  <div *ngIf="isValidation" style="color: red; text-align: center;">Please enter correct tracking number</div>
+    <div *ngIf="submitted && trackingCtrl.invalid" style="color: red; text-align: center;">Please enter the tracking number</div>
+    <div id= "textbox-1" style="text-align: center;">
+      Tracking Number : <input type="trackingNumber" name="trackingNumber" [formControl]="trackingCtrl" [(ngModel)]="trackingNumber.trackingNumber" placeholder="Enter Tracking Number:" id="trackingNumber" >
+      <button class="btn btn-success" (click)="getOrderDetails($event)">Submit</button>
+    </div>
+  </div>
+   <div class="center" *ngIf="orderDetails!=null" > 
+   <table class="table">
+        <tr>
+          <th style="background-color: silver;"> Tracking Number</th>
+          <td>{{orderDetails.trackingNumber}}</td>
+        </tr>
+        <tr>
+          <th style="background-color: silver;"> Shipper Reference</th>
+          <td>{{orderDetails.shipperReference}}</td>
+        </tr>
+        <tr>
+          <th style="background-color: silver;"> Collect Amount</th>
+          <td>{{orderDetails.collectAmount}}</td>
+        </tr>
+        <tr>
+          <th style="background-color: silver;"> Status</th>
+          <td>{{orderDetails.status}}</td>
+        </tr>
+        <tr>
+          <th style="background-color: silver;"> Payment Reference Number</th>
+          <td>{{orderDetails.paymentReferenceNumber}}</td>
+        </tr>
+        <tr>
+          <th style="background-color: silver;"> Update Date</th>
+          <td>{{orderDetails.updatedBy}}</td>
+        </tr>
+     </table> 
+    </div>
+  </div>
+    </html> 
+    <!-- <table class="table " >
+      <thead>
+      <tr style="text-align: center;">
+        <th style="background-color: silver;"> Tracking Number</th>
+        <th style="background-color: silver;"> Shipper Reference</th>
+        <th style="background-color: silver;"> Collect Amount</th>
+        <th style="background-color: silver;"> Status</th>
+        <th style="background-color: silver;"> Payment Reference Number</th>
+        <th style="background-color: silver;"> Update Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <td>{{orderDetails.trackingNumber}}</td>
+        <td>{{orderDetails.shipperReference}}</td>
+        <td>{{orderDetails.collectAmount}}</td>
+        <td>{{orderDetails.status}}</td>
+        <td>{{orderDetails.paymentReferenceNumber}}</td>
+        <td>{{orderDetails.updatedBy}}</td>
+
+      </tbody>
+      </table> -->
+
+ 
